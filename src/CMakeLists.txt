@@ -21,7 +21,7 @@ install(EXPORT ctrl-cTargets
   FILE ctrl-cTargets.cmake
   DESTINATION "${ctrl-c_INSTALL_CMAKEDIR}"
 )
-configure_package_config_file("${CMAKE_SOURCE_DIR}/cmake/Config.cmake.in"
+configure_package_config_file("${PROJECT_SOURCE_DIR}/cmake/Config.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/ctrl-cConfig.cmake"
   INSTALL_DESTINATION "${ctrl-c_INSTALL_CMAKEDIR}"
   NO_SET_AND_CHECK_MACRO
